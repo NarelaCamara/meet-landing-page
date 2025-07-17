@@ -9,13 +9,13 @@ function App() {
       <div className="p-8 flex flex-col items-center ">
         <img src={logo} className="h-[28px] m-12" alt="Meet logo" />
 
-        <img src={hero} className="w-full" alt="Meet hero" />
+        <img src={hero} className="max-w-[115vw] z-20" alt="Meet hero" />
 
         <h1 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center w-[15rem]">
           Group Chat for Everyone
         </h1>
 
-        <p className="font-[Red Hat Display]  text-[1.125]  text-[#87879D] text-center py-6">
+        <p className="font-[Red Hat Display]  text-[1.125] font-semibold text-[#87879D] text-center py-6">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
@@ -46,7 +46,7 @@ function App() {
         <h2 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center">
           Smarter meetings, all in one place
         </h2>
-        <p className="font-[Red Hat Display]  text-[1.125]  text-[#87879D] text-center mb-8">
+        <p className="font-[Red Hat Display] font-semibol text-[1.125]  text-[#87879D] text-center mb-8">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
