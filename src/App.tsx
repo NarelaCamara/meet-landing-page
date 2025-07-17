@@ -1,7 +1,14 @@
 import "./App.css";
-import footer from "./assets/mobile/image-footer.jpg";
-import hero from "./assets/tablet/image-hero.png";
+
+import footerTableMobile from "./assets/tablet/image-hero.png";
+import footerLeft from "./assets/desktop/image-hero-left.png";
+import footerRight from "./assets/desktop/image-hero-right.png";
 import logo from "./assets/logo.svg";
+
+import manTexting from "./assets/desktop/image-man-texting.jpg";
+import menMeeting from "./assets/desktop/image-men-in-meeting.jpg";
+import womanVideoCall from "./assets/desktop/image-woman-in-videocall.jpg";
+import womenVideoChatting from "./assets/desktop/image-women-videochatting.jpg";
 
 function App() {
   return (
@@ -10,26 +17,26 @@ function App() {
         <img src={logo} className="h-[28px] m-12" alt="Meet logo" />
 
         <img
-          src={hero}
+          src={footerTableMobile}
           className="max-w-[115vw]  lg:hidden"
           alt="Table - Mobile users image"
         />
 
         <div className="flex flex-row  z-10 absolute top-[12.5rem]">
           <img
-            src={hero}
-            className="w-full max-h-[448px]  hidden  lg:block relative -left-100"
+            src={footerLeft}
+            className="w-full max-h-[448px]  hidden  lg:block relative -left-132"
             alt="Meet hero"
           />
 
           <img
-            src={hero}
-            className="w-full max-h-[448px]  hidden  lg:block relative -right-100"
+            src={footerRight}
+            className="w-full max-h-[448px]  hidden  lg:block relative -right-132"
             alt="Meet hero"
           />
         </div>
 
-        <h1 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center w-[15rem]">
+        <h1 className="font-[Red Hat Display] text-[2.5rem] lg:text-[4rem] font-bold text-center w-[15rem] lg:w-[448px]">
           Group Chat for Everyone
         </h1>
 
@@ -56,10 +63,14 @@ function App() {
           </div>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-6 my-16  md:grid-cols-4 md:grid-rows-1 lg:w-[1120px]">
-          <img src={footer} className="w-full rounded-lg" alt="Vite " />
-          <img src={footer} className="w-full rounded-lg" alt="Vite " />
-          <img src={footer} className="w-full rounded-lg" alt="Vite " />
-          <img src={footer} className="w-full rounded-lg" alt="Vite " />
+          <img src={womanVideoCall} className="w-full rounded-lg" alt="Vite " />
+          <img
+            src={womenVideoChatting}
+            className="w-full rounded-lg"
+            alt="Vite "
+          />
+          <img src={menMeeting} className="w-full rounded-lg" alt="Vite " />
+          <img src={manTexting} className="w-full rounded-lg" alt="Vite " />
         </div>
 
         <h3 className="font-[Red Hat Display] text-[#4D96A9] text-[0.75rem] font-bold text-center uppercase tracking-[4px]">
@@ -76,7 +87,7 @@ function App() {
       </div>
 
       <div className="pt-16 md:mt-14 ">
-        <div className=" bg-[url(./assets/mobile/image-footer.jpg)] md:bg-[url(./assets/desktop/image-footer.jpg)] bg-contain from-[#4D96A9] mt-8   bg-[#4D96A9] bg-blend-soft-light">
+        <div className=" bg-[url(./assets/mobile/image-footer.jpg)] md:bg-[url(./assets/tablet/image-footer.jpg)]  lg:bg-[url(./assets/desktop/image-footer.jpg)]  bg-contain from-[#4D96A9] mt-8   bg-[#4D96A9] bg-blend-soft-light">
           <div className="pb-16">
             <div className="relative top-[-7rem] mt-8">
               <div className="flex flex-col items-center ">
