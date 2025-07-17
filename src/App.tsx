@@ -9,13 +9,31 @@ function App() {
       <div className="p-8 flex flex-col items-center ">
         <img src={logo} className="h-[28px] m-12" alt="Meet logo" />
 
-        <img src={hero} className="max-w-[115vw] z-20" alt="Meet hero" />
+        <img
+          src={hero}
+          className="max-w-[115vw]  lg:hidden"
+          alt="Table - Mobile users image"
+        />
+
+        <div className="flex flex-row   absolute">
+          <img
+            src={hero}
+            className="w-[315px]  hidden  lg:block -left-10"
+            alt="Meet hero"
+          />
+
+          <img
+            src={hero}
+            className="w-[315px]  hidden  lg:block -right-10"
+            alt="Meet hero"
+          />
+        </div>
 
         <h1 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center w-[15rem]">
           Group Chat for Everyone
         </h1>
 
-        <p className="font-[Red Hat Display]  text-[1.125] font-semibold text-[#87879D] text-center py-6">
+        <p className="font-[Red Hat Display]  text-[1.125] font-semibold text-[#87879D] text-center py-6 lg:w-[354px]">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
@@ -29,13 +47,15 @@ function App() {
           </button>
         </div>
 
-        <div className="flex flex-col items-center mt-8 ">
-          <div className="inline-block h-[80px] w-0.5 bg-[#D1D1DF]"></div>
-          <div className="w-[56px] h-[56px] bg-white border-[#D1D1DF] border-2 rounded-full text-[#87879D] text-[1rem]  font-bold font-[Red Hat Display] flex items-center justify-center ">
-            02
+        <div className="pt-16">
+          <div className="flex flex-col items-center mt-8 ">
+            <div className="inline-block h-[80px] w-0.5 bg-[#D1D1DF]"></div>
+            <div className="w-[56px] h-[56px] bg-white border-[#D1D1DF] border-2 rounded-full text-[#87879D] text-[1rem]  font-bold font-[Red Hat Display] flex items-center justify-center ">
+              02
+            </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-6 my-16 ">
+        <div className="grid grid-cols-2 grid-rows-2 gap-6 my-16  md:grid-cols-4 md:grid-rows-1 ">
           <img src={footer} className="w-full rounded-lg" alt="Vite " />
           <img src={footer} className="w-full rounded-lg" alt="Vite " />
           <img src={footer} className="w-full rounded-lg" alt="Vite " />
@@ -48,14 +68,14 @@ function App() {
         <h2 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center">
           Smarter meetings, all in one place
         </h2>
-        <p className="font-[Red Hat Display] font-semibol text-[1.125]  text-[#87879D] text-center mb-8">
+        <p className="font-[Red Hat Display] font-semibold text-[1.125]  text-[#87879D] text-center mb-8 lg:w-[454px]">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
         </p>
       </div>
 
-      <div className="pt-16">
+      <div className="pt-16 md:mt-14 ">
         <div className=" bg-[url(./assets/mobile/image-footer.jpg)] md:bg-[url(./assets/desktop/image-footer.jpg)] bg-contain from-[#4D96A9] mt-8   bg-[#4D96A9] bg-blend-soft-light">
           <div className="pb-16">
             <div className="relative top-[-7rem] mt-8">
@@ -66,12 +86,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="p-8 flex flex-col items-center">
+            <div className="p-8 flex flex-col items-center lg:flex-row justify-center">
               <h1 className="font-[Red Hat Display] text-[2.5rem] text-white font-bold text-center w-[15rem]">
                 Experience more together
               </h1>
 
-              <p className="font-[Red Hat Display]  text-[1.125]  text-white text-center py-6">
+              <p className="font-[Red Hat Display]  text-[1.125]  text-white text-center py-6 lg:w-[354px]">
                 Stay connected with reliable HD meetings and unlimited
                 one-on-one and group video sessions.
               </p>
