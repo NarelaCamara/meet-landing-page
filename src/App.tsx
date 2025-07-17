@@ -15,16 +15,16 @@ function App() {
           alt="Table - Mobile users image"
         />
 
-        <div className="flex flex-row   absolute">
+        <div className="flex flex-row  z-10 absolute top-[12.5rem]">
           <img
             src={hero}
-            className="w-[315px]  hidden  lg:block -left-10"
+            className="w-full max-h-[448px]  hidden  lg:block relative -left-100"
             alt="Meet hero"
           />
 
           <img
             src={hero}
-            className="w-[315px]  hidden  lg:block -right-10"
+            className="w-full max-h-[448px]  hidden  lg:block relative -right-100"
             alt="Meet hero"
           />
         </div>
@@ -55,7 +55,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-6 my-16  md:grid-cols-4 md:grid-rows-1 ">
+        <div className="grid grid-cols-2 grid-rows-2 gap-6 my-16  md:grid-cols-4 md:grid-rows-1 lg:w-[1120px]">
           <img src={footer} className="w-full rounded-lg" alt="Vite " />
           <img src={footer} className="w-full rounded-lg" alt="Vite " />
           <img src={footer} className="w-full rounded-lg" alt="Vite " />
@@ -65,7 +65,7 @@ function App() {
         <h3 className="font-[Red Hat Display] text-[#4D96A9] text-[0.75rem] font-bold text-center uppercase tracking-[4px]">
           Built for modern use
         </h3>
-        <h2 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center">
+        <h2 className="font-[Red Hat Display] text-[2.5rem] font-bold text-center w-[27rem] pb-8">
           Smarter meetings, all in one place
         </h2>
         <p className="font-[Red Hat Display] font-semibold text-[1.125]  text-[#87879D] text-center mb-8 lg:w-[454px]">
@@ -86,12 +86,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="p-8 flex flex-col items-center lg:flex-row justify-center">
-              <h1 className="font-[Red Hat Display] text-[2.5rem] text-white font-bold text-center w-[15rem]">
+            <div className="p-8 flex flex-col items-center lg:flex-row justify-center lg:justify-around">
+              <h1 className="font-[Red Hat Display] text-[2.5rem] text-white font-bold text-center w-[15rem] lg:min-w-[445px] lg:text-start">
                 Experience more together
               </h1>
 
-              <p className="font-[Red Hat Display]  text-[1.125]  text-white text-center py-6 lg:w-[354px]">
+              <p className="font-[Red Hat Display]  text-[1.125]  text-white text-center py-6 lg:w-[354px] lg:text-start">
                 Stay connected with reliable HD meetings and unlimited
                 one-on-one and group video sessions.
               </p>
